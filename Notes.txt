@@ -1,0 +1,57 @@
+JavaScript primitive data types: 
+  String, Number, Boolean, undefined, Null, and Symbol.
+
+Strings:
+A collection of one or more characters between two single quotes, double quotes, or backticks.
+
+Numbers
+Integers: Integer (negative, zero and positive) numbers Example: ... -3, -2, -1, 0, 1, 2, 3 ...
+Float-point numbers: Decimal number Example ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
+
+Booleans
+A boolean value is either True or False. Any comparisons returns a boolean value, which is either true or false.
+A boolean data type is either a true or false value.
+
+Undefined
+In JavaScript, if we don't assign a value to a variable, the value is undefined. In addition to that, if a function is not returning anything, it returns undefined.
+
+Null
+Null in JavaScript means an empty value.
+
+To check the data type of a variable you can use the typeof operator. 
+EX: 
+  console.log(typeof 'Apple')  //string
+  console.log(typeof 5)        //number
+  console.log(typeof true)     //boolean  
+  console.log(typeof null)     //object type
+  console.log(typeof undefined)//undefined
+
+
+Comments can be Single or Multiline 
+//This is a singleline comment 
+/*
+This comment 
+can span 
+multiple 
+lines
+*/
+
+Variables are containers of data. Variables are used to store data in a memory location. When a variable is declared, a memory location is reserved. When a variable is assigned to a value (data), the memory space will be filled with that data.
+ --var is error prone don't use
+If a variable may change use  let
+If a variable does not need to change use   const 
+
+A valid JavaScript variable name must follow the following rules:
+  should not begin with a number.
+  does not allow special characters except dollar sign and underscore.
+  follows a camelCase convention.
+  should not have space between words.
+
+Syntax of nameing a variable: 
+  let nameOfVariable = value
+  const nameOfVariable = value
+
+
+
+
+
