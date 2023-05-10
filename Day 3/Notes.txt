@@ -1,0 +1,25 @@
+Boolean 
+
+A boolean data type represents one of the two values:true or false. Boolean value is either true or false. Any comparisons return a boolean value which is either true or false.
+
+Example: Boolean Values
+  let isLightOn = true
+  let isRaining = false
+  let isHungry = false
+  let isMarried = true
+  let truValue = 4 > 3    // true
+  let falseValue = 4 < 3  // false
+
+Truthy Values: 
+  All numbers (positive/negative) are truthy EXECPT ZERO
+  All strings are truthy except an empty stirng ("", '')
+  The boolean true
+
+Falsy values: 
+  Number 0
+  0n - BigInt
+  null
+  undefined
+  NaN
+  the boolean false
+  
