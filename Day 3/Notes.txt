@@ -22,4 +22,97 @@ Falsy values:
   undefined
   NaN
   the boolean false
-  
+
+Undefined - if a variable is declared but not assigned a value the value of it will be undefined. 
+  -If a function is not returning a value it will be undefined. 
+
+Null - if a value is set to null it means it has no value. 
+
+Operators 
+
+Assignment operators - the equal sign in JavaScript is used to assign value to a variable. 
+Shorthand
+Example:   Same As:
+x = y     x = y
+x += y    x = x + y     Addition
+x -= y    x = x - y     Subtraction
+x *= y    x = x * y     Multiplication
+x /= y    x = x / y     Division
+x %= y    x = x % y     Modulus
+x **= y   x = x ** y    Exponential
+
+Comparison operators - compair two values.
+==      Equal in value only - Equivalent                x == y
+===     Equal in value and data type - Exactly equal    x === y
+!=      Not equal                                       x != y
+>       Great than                                      x > y
+<       Less than                                       x < y
+>=      Greater than or equal to                        x >= y
+<=      Less than or equal to                           x <= y
+
+***As rule of thumb, if a value is not true with == it will not be equal with ===. Using === is safer than using ==.
+
+Logical operators - used in logical statements to determine equality or difference between variables or values.
+&&      true only if the two operands are true
+||      true if either of the operand is true
+!       negates true to false and false to true
+
+Increment operator - used to increase a value of a variable. The increment could be pre or post increment. 
+  Pre-increment 
+  let count = 0
+  console.log(++count)    // 1
+  console.log(count)      // 1
+
+  Post-increment 
+  let count = 0
+  console.log(count++)    // 0
+  console.log(count)      // 1
+
+Decrement operator - used to decrease a value of a variable. The decrement could be pre or post decrement. 
+  Pre-decrement
+  let count = 0
+  console.log(--count)    // -1
+  console.log(count)      // -1
+
+  Post-decrement 
+  let count = 0 
+  console.log(count--)    // 0
+  console.log(count)      // -1
+
+Ternary operators - used as an alternative to the if...else statement. 
+Syntax: 
+condition ? expression to execute if true : expression to execute if false
+condition ? exprIfTrue : exprIfFalse
+
+
+Window alert() method - used to display a specific message and an ok button on the screen. 
+alert(message)
+
+Window prompt() method - used to display a prompt box with an input on the browser to take input values and the input dat can be stored in a variable. 
+prompt('regular text', 'optional text')
+
+Window confirm() method - used to display a dialog box with a specified message, along with an OK and Cancel button. Often used to ask permission from a user. OK returns true Cancel returns false. 
+confirm(message)
+
+Date Object
+JavaScript current date and time is created using the JavaScript Date Object. The object we create using Date object provides many methods to work with date and time.
+  Date Object Methods
+  getFullYear()         Get the year as a four digit number(yyyy)
+  getMonth()            Get the months as a number (0-11)
+  getDate()             Get the day as a number (1-31)
+  getHours()            Get the hour (0-23)
+  getMinutes()          Get the minute (0-59)
+  getSeconds()          Get the second (0-59)
+  getMilliseconds()     Get the millisecond(0-999)
+  getTime()             Get the time (milliseconds since 01/01/1970)
+  getDay()              Get the weekday as a number (0-6)
+
+Creating a time object 
+const now = new Date()
+Once the time object is created the variable now can access the date methods. 
+
+
+
+
+
+
