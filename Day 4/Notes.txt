@@ -1,0 +1,70 @@
+Conditionals
+
+Conditional statements are used for make decisions based on different conditions. By default , statements in JavaScript script executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two ways:
+
+Conditional execution: a block of one or more statements will be executed if a certain expression is true
+Repetitive execution: a block of one or more statements will be repetitively executed as long as a certain expression is true.
+
+Conditions can be implemented using the following:
+- if
+- if else
+- if else if else
+- switch 
+- ternary operator 
+
+if:
+In JavaScript as well as other programming languages, the keyword if is used to check if a condition is true and to execute the code in the code block that follows. If the condition is not true the code block is skipped. 
+Syntax:
+if(condition){
+  //code block to run if condition is true. 
+}
+
+if else:
+If the first condition (if) is not true the else condition will be executed. 
+Syntax:
+if(condition){
+  //code block to run if condition is true.
+} else {
+  //this code runs if the first condition is false
+}
+
+if else if else:
+This is used to check multiple conditions. 
+Syntax: 
+if(condition){
+  //code block to run if condition is true.
+} else if {
+  // else this code runs if the condition is true
+} else {
+  //this code runs if the none of the conditions are true.
+}
+
+Switch:
+An alternative to the if else if else else statement. Switch uses the switch keyword followed by parenthesis which contains an expression. The code block below contains different cases which will run if the expression in the parenthesis match the case. Each case contains a break statement which allows it to break from the switch statement. If no cases match the statement the default statement will execute. 
+Syntax:
+switch(expression){
+  case 1:
+  //code
+  break
+  case 2:
+  //code
+  break
+  case 3:
+  //code
+  break
+  default:
+  //code
+}
+
+
+Ternary Operators:
+Another way to write conditionals. 
+Syntax:
+condition? expression if true : expression if false
+
+
+
+
+
+
+
