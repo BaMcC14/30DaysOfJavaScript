@@ -80,23 +80,24 @@ switch(weather){
 //    console.log('It is not a week day.')
 //}
 
-let num1 = prompt('Enter number');
-switch (true) {
-  case num1 > 0:
-    console.log('Number is positive');
-    break;
-  case num1 == 0:
-    console.log('Numbers is zero');
-    break;
-  case num1 < 0:
-    console.log('Number is negative');
-    break;
-  default:
-    console.log('Entered value was not a number');
-}
+//let num1 = prompt('Enter number');
+//switch (true) {
+//  case num1 > 0:
+//    console.log('Number is positive');
+//    break;
+//  case num1 == 0:
+//    console.log('Numbers is zero');
+//    break;
+//  case num1 < 0:
+//    console.log('Number is negative');
+//    break;
+//  default:
+//    console.log('Entered value was not a number');
+//}
 
 
 let isSunny = true
 isSunny?console.log("It is sunny.") : console.log("It is not sunny.")
 
 4 > 2? console.log("4 is greater than 2") : console.log("4 is not greater than 2")
+
