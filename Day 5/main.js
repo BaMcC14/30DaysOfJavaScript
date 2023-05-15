@@ -24,9 +24,9 @@ const webTech = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB']//array
 console.log('Web Technologies: ', webTech)
 console.log('Number of Web Technologies: ', webTech.length)
 
-const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] //array of strings
-console.log('Countries: ', countries)
-console.log('Number of countries: ', countries.length)
+//const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] //array of strings
+//console.log('Countries: ', countries)
+//console.log('Number of countries: ', countries.length)
 
 //Arrays storing different data types
 const myArray = [
