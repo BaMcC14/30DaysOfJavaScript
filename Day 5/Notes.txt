@@ -1,0 +1,137 @@
+Arrays 
+
+Arrays can store multiple values unlike arrays which can only store one. Each value in an array has an index and each index has a reference in a memory address. Each value can be accessed by using their index. The index of an array starts at 0 and the last element is one less than the length of the array. 
+
+An Array is a collection of different data types which are ordered and changable or modifiable. 
+An Array allows for storing duplicate elementas and different data types.
+An Array can be empty or it may have many different data type values. 
+
+How to create an empty Array. 
+
+It is commone to use const for arrays.
+  - It means you do not use that variable name again. 
+Can be written in two ways.
+1. Using Array Constructor 
+  const arr = Array()
+  //let arr = new Array()
+
+2. Using Square Brackets []
+const arr = []
+
+An Array constructor can be used to create an empty array with empty values.
+cosnt eightValues = Array(8) //creates eight empty values
+
+Creating an Array with elements 
+const arr = [123, 234, 345, 456]
+const arr = ['US', 'Mexico', 'Canada' ]
+const arr = [234, 'New Orleans', 3.14]
+
+Creating an Array using split.
+  - split a string at different positions and changed to an array.
+let js = 'JavaScript'
+const charsInJavaScript = js.split('')
+console.log(charsInJavaScript) 
+// ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+
+Accessing Array Items Using index
+We can access elements in an array by using their index. Array index starts from 0. 
+Syntax:
+const variableName = ['value0', 'value1', 'value2', 'value3']
+let newVariable = variableName[n] // n can be any number in the array.
+
+const fruits = ['banana', 'orange', 'mango', 'lemon']
+let firstFruit = fruits[0] //accessing the first fruit
+
+Modifying Array Elements 
+Arrays are mutable or modifiable. Once created an arrays contents can be modified. 
+
+Methods to Manipulate Arrays
+fill()
+When using the Array() constructor the fill method can be used to fill the array with static values.
+  const arr = Array(5).fill('#') 
+  //creates an array with 5 values of '#'
+  const arr = Array(9).fill(0)
+  //creates an array with 9 values of 0
+
+concat()
+concat is used to concatenate two arrays. 
+  const firstArray = [1, 2, 3]
+  const secondArray = [4, 5, 6]
+  const thirdArray = firstArray.concat(secondArray)
+  console.log(thirdArray) //[1, 2, 3, 4, 5, 6]
+
+length
+Used to get the lenght of an array.
+const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+console.log(arr.length) //8
+**Rember it returns the length not the index**
+
+indexOf()
+To check if an item exits in an array you can use the indexOf method. If it does not exist it returns -1, if it does exist it returns the index. 
+
+lastIndexOf()
+This returns the position of the last element specified in the array if it exist if it does not exist it returns -1
+
+includes()
+To check if an element exist in an array. If it exist it returns true if not it returns false.
+
+isArray()
+Check if a data type is an array. 
+returns true or false.
+Use the Array constructor: Array.isArray(arrayToCheck)
+
+toString()
+Change an array to a string
+
+join()
+join is used to join the elements of an array. The arguments passed in the join method will be joined in the array and returned as a string. 
+By default it joins with a comma, but different string parameters can be used to join the elements.
+
+slice()
+slice is used to cut out a range of elements.
+slice(startIndex, endIndex) - The endIndex is NOT included
+.slice()                - Will copy all items 
+.slice(0)               - Will copy all items
+.slice(0, array.length) - Will copy all items
+.slice(1,4)             - Will copy from index 1 to index 3.
+
+splice()
+splice takes three parameters, the start positon, number of times to be removed and the number of items to be added. The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+.splice()               - Will remove all items
+.splice(0,1)            - Will remove the first item
+.splice(start)
+.splice(start, deleteCount)
+.splice(start, deleteCount, item1)
+.splice(start, deleteCount, item1, item2, itemN)
+
+push()
+push is used to add items to the end of an existing array.
+.push(item)
+
+pop()
+pop is used to remove items from the end of an existing array. 
+.pop()
+
+shift()
+shift is used to remove an item from the beginning of an array.
+.shift()
+
+unshift()
+unshift is used to add an element to the beginning of an array.
+.unshift(item)
+
+reverse()
+reverse reverses the order of an array. 
+.reverse()
+
+sort()
+sort is used to arrange array elements in ascending order. Sort takes a call back function. 
+.sort()
+
+An Array of Arrays
+Arrays can store different data types including an array itself.
+
+
+
+
+
