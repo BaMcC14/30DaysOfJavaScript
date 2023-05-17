@@ -1,0 +1,38 @@
+Loops
+In programming languages to carry out repetitive task we use different kinds of loops. The following examples are the commonly used loops in JavaScript and other programming languages.
+
+for loop:
+for loop Syntax:
+  for(initialization, condition, increment/decrement){
+    //code body. 
+  }
+
+while loop:
+while loops are not guaranteed to run. 
+while loop Syntax:
+  variable to check
+  while(condition that equals true){
+    //This code will run.
+  }
+
+do while loop:
+do while loops will run at least once. 
+do while loop Syntax:
+  variable to check
+  do{
+    //code body
+  }while (condition that equals true)
+
+for of loop:
+the for of loop is used in arrays. It is an easy way to iterate through an array if we are not intrested in the index of each element in the array.
+for of loop Syntax:
+  for(const element of arr){
+    //code body
+  }
+
+break:
+break is used to interrupt a loop
+
+continue:
+continue is used to skip certain iterations.
+
