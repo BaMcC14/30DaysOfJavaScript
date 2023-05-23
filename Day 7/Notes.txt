@@ -1,0 +1,120 @@
+Functions 
+
+Functions are reusable blocks of clode or programming statems designed to perform a particular task. Function is declared by a function key word followed by a name and parentheses (). Parentheses can take a parameter. If the function takes a parameter is called an argument. Functions can also take default parameters. To store data to a function it has t o return a certain data type. To get the value we call or invoke a function. 
+Functions help to: 
+  Make Code clean and easy to read.
+  Reusable 
+  Easy to test
+
+Functions can be declared or created in a few ways. 
+  Declaration Function 
+  Expression Function 
+  Anonymous Function
+  Arrow Function 
+
+Function Declaration
+How to declare and call a function.
+Syntax:
+  function functionName(){
+    //code goes here 
+  }
+
+  functionName() //call or envoke the function by its name with parentheses. 
+
+Functions can be declared with and without functions. 
+
+Function returning value 
+Functions can also return values. If a function does not return a value the value of the function is undefined. 
+
+
+Function with parameters
+Functions can be passed different datatypes such as number, string, boolean, object, and functions as parameters. 
+Syntax:
+  function functionName(parm1){
+    //code goes here
+  }
+  
+  functionName(parm1) //during calling or invoking one argument needed.
+
+Functions can also take in more than one parameter.  
+Syntax:
+  function functionName(parm1, parm2){
+    //code goes here
+  }
+
+  functionName(parm1, parm2);
+
+  Functions can have more than two parameters as well.
+  Syntax:
+    function functionName(parm1, parm2, parm3,...){
+      //code goes here
+    }
+    functionName(parm1, parm2, parm3,...); //three or more arguments are needed. 
+
+Functions with unlimited parameters
+Sometimes we won't know how many arguments are going to be passed in a function. We should know how to write a function which can take unlimited number of arguments. 
+
+A function declaration provides a function scoped arguments array like object. Any thing we passed as arguments in the function can be accessed from arguments objects inside the functions. 
+
+
+
+Anonymous Function.
+Syntax:
+const functionName = function(){
+  //code goes here
+}
+
+Expression Function
+Expression functions are anonymous functions. After creating a function without a name we assign it to a variable. To return a value from the function we should call the variable. 
+Syntax:
+const functionName = function(parm1){
+  //code goes here
+}
+console.log(functionName(n));
+
+Self Invoking Functions
+Self invoking functions are anonymous functions which do not need to be called to return a value.
+
+Arrow Functions
+Arrow functions is an alternative way to write a function. The function declaration and arrow function have some minor differences. 
+Arrow functions uses arrow insted of the keyword function to declare a function. 
+Syntax:
+const functionName = n => {
+  return n * n;
+}
+or on one line.
+const square = n => n * n
+
+Arrow functions do not have the function scoped arguments object. To implement a function which takes unlimited number of arguments in an arrow function we use the spread operator followed by any parameter name. Anything passed as an argument in the function can be accessed as an array in the arrow function. 
+
+
+Functions with default parameters
+Sometimes it is neceary to pass default values to parameters when invoking the function if we do no pass an argument the default value will be used. Both function declaration and arrow function can ahve a default value or values. 
+Syntax:
+  function functionName(param = value){
+    //code goes here
+  }
+
+functionName()
+functionName(arg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
