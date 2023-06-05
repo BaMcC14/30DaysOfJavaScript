@@ -2317,12 +2317,14 @@ const users3 = [
   }
   ];
 
+  console.log(users3)
 
   function signUp(name, email, password){
-    for(const user of users2){
-      if(user.email == email){
+    for(const user of users3)
+      if(user.email == email)
         return 'User Exist!'
-      }
+      
+
       let alphaNumbs = '123456789abcdefghijklmnopqrstuvwxyz123456789';
       let randomCode = [];
 
@@ -2345,7 +2347,7 @@ const users3 = [
       let day = date.getDay();
       day < 10 ? '0' + day.toString() : day;
 
-      let fullDate = `${year}/${month+1}/${date}  ${hrs>12? (hrs-12).toString() + ':' + min.toString() + ' PM': hrs.toString()+':' + min.toString() + ' AM'}`
+      let fullDate = `${year}/${month+1}/${date}  ${hrs>12? (hrs-12).toString() + ':' + min.toString() + ' PM': hrs.toString()+':' + min.toString() + ' AM'}`;
    
       let userDate = {
         _id : id,
@@ -2355,29 +2357,24 @@ const users3 = [
         createdAt : fullDate,
         isLoggedIn: false
       };
-      users3.push(userDate);
+      users3.push(userDate);  
+  }
+  
+signUp('alecy', 'aex@alex.com', 'pstg34');
+console.log(users3);
+
+users3.forEach((x) => console.log(x));
+
+let signIN = (mail, password) => {
+  for(const user of users3){
+    if(user.email == mail && user.password == password){
+      user.isLoggedIn = true;
+      return 'You have been signed in!!';
     }
   }
-  //Not working right need to check out. 
- signUp('alecy', 'aex@alex.com', 'pstg34');
-
-    console.log(users3);
-
-
-
-
-  let signIn = () => {
-    
-  }
-
-
-
-
-
-
-
-
-
+  return 'Incorrect Email or Password';
+}
+console.log(signIN('aex@alex.com', '123123'));
 
 
 
@@ -2414,14 +2411,44 @@ const users3 = [
 ]
 
 
+let rateProduce = (productNum, userId, rate) => {
+  let theRating = {'userId': userId, 'rate' : rate};
+  products2[productNum - 1].ratings.push(theRating);
+  console.log(products2[productNum - 1].ratings);
+}
 
+rateProduce(2, '23sdf2', 4.5);
 
+let averageRating = (productID) =>{
+  let total = 0;
+  let prod;
+  for(product of products2){
+    if(product._id == productID){
+      prod = product;
+    }
+    for(const user of prod.ratings){
+      total += user.rate;
+    }
+    return total/product.ratings.length;
+  }
+  
+}
+console.log(averageRating('eedfcf'))
 
+let likeProduct = (userId, productNum) => {
+  let product = products2[productNum - 1];
+  let index = product.likes.indexOf(userId);
 
+  if(index == 1){
+    product.likes.push(userId);
+  } else {
+    product.likes.splice(index, 1);
+  }
+}
 
+likeProduct('fg12cy', 3)
 
-
-
+console.log(products2)
 
 
 
