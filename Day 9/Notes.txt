@@ -1,0 +1,92 @@
+Higher Order Function
+
+Higher Order Functions take other functions as a parameter or returns a function as a value. 
+  - A function passed as a parameter is known as a callback.
+
+Callback 
+A callback is a function which can be passed as a parameter to other functions. 
+
+Returning Function
+A Hgher order function can return functions as a value. 
+
+Setting Time
+JavaScript allows us to execute an activity in a certain intenerval of time or schedule/wait for some time to ececute some activities. 
+
+  setInterval
+  setTimeout
+
+Setting Interval using setInterval function 
+
+The setInterval is a higher order function used to do some activity continously with some interval of time. 
+The setInterval global method takes a callback function and a duration as a parameter. 
+  - The duration is in milliseconds.
+  - The callback will always be called in that interval of time. 
+
+Syntax:
+  function callback(){
+    //code
+  }
+  setInterval(callback, duration);
+
+Setting a time using a setTimeout function
+
+The setTimeout is a higher order function used to execute some aciton at some point in the future. 
+The setTimeout global method takes a callback funciton and a duration as a parameter.
+  - The duration is in milliseconds.
+  - The callback will wait for the specified amount of time before executing.
+  - Only executes once.
+
+Syntax:
+function callback(){
+  //code
+}
+
+setTimeout(callback, duration);
+
+
+Functional Programming
+JavaScript introduced a number of built in methods which can help solve complicated problems. 
+  - All buildin method take callback functions.
+
+  forEach 
+  map
+  filter
+  reduce
+  find
+  every
+  some
+  sort 
+
+forEach - iterate an array element. forEach is only used with arrays.
+  - It takes a callback function with elements, index parameter(optional) and array itself. 
+  The forEach() method is an iterative method. It calls a provided callbackFn function once for each element in an array in ascending-index order
+
+Syntax:
+  arr.forEach(function (element, index, arr){
+    console.log(index, element, arr);
+  })
+or
+  arr.forEach(element, index, arr) => {
+    console.log(index, element, arr);
+  }
+or
+  arr.forEach(element,index, arr) => console.log(index, element, arr)
+
+map - Iterates an arrays elements and modifys the arrays elements. It takes a callback function with elements, index, array parameter and returns a new array. 
+
+const modifiedArray = arr.map(function(element, index, arr){
+  return element;
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
