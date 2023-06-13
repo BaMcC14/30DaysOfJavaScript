@@ -95,6 +95,90 @@ const moreCountries = [
 const moreUpperCountries = moreCountries.map(country => country.toUpperCase())
 console.log(moreUpperCountries)
 
+const countriesFirstThreeLetters = moreCountries.map((country) =>
+  country.toUpperCase().slice(0,3))
+console.log(countriesFirstThreeLetters)
+
+
+const countriesContainingLand = moreCountries.filter((country) => country.includes('land'));
+console.log(countriesContainingLand)
+
+const countriesEndsWithia = moreCountries.filter((country) => country.endsWith('ia'));
+console.log(countriesEndsWithia)
+
+const countriesWithFiveLetters = moreCountries.filter((country) => country.length === 5);
+console.log(countriesWithFiveLetters);
+
+const scores = [
+  { name: 'Asabeneh', score: 95 },
+   { name: 'Lidiya', score: 98 },
+  { name: 'Mathias', score: 80 },
+  { name: 'Elias', score: 50 },
+  { name: 'Martha', score: 85 },
+  { name: 'John', score: 100 },
+]
+
+const scoresGreaterEighty = scores.filter((score) => score.score > 80);
+console.log(scoresGreaterEighty);
+
+const numArr = [1, 2, 3, 4, 5];
+
+const sumArray = numArr.reduce((acc, cur) =>  acc + cur, 0);
+console.log(sumArray);
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+const areAllString = names.every((name) => typeof name === 'string');
+console.log(areAllString);
+
+const score = scores.find((user) => user.score > 80)
+console.log(score)
+
+const result = names.findIndex((name) => name.length > 7);
+console.log(result)
+
+const ages = [24, 22, 25, 32, 35, 18]
+const findAge = ages.findIndex((age) => age < 20);
+console.log(findAge)
+
+const bools = [true, true, true, true]
+const areSomeTrue = bools.some((index) => index === true);
+console.log(areSomeTrue);
+
+const areAllStirng = names.some((name) => typeof name === 'number');
+console.log(areAllStirng)
+
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot'];
+
+console.log(products.sort());
+
+const numbers2 = [9.81, 3.14, 100, 37];
+
+console.log(numbers2.sort())// 100 is put first
+numbers2.sort(function(a, b){
+  return a - b;
+})
+console.log(numbers2);
+
+numbers2.sort(function(a, b){
+  return b - a;
+})
+console.log(numbers2);
+
+const users = [
+  { name: 'Asabeneh', age: 150 },
+  { name: 'Brook', age: 50 },
+  { name: 'Eyob', age: 100 },
+  { name: 'Elias', age: 22 },
+]
+
+users.sort((a, b) => {
+  if(a.age < b.age) return -1
+  if(a.age > b.age) return 1
+  return 0
+})
+console.log("Users Sorted by Age")
+console.log(users)
+
 
 
 
